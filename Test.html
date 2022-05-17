@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <script>
+            fetch('https://api.mercadolibre.com/sites/site_id/search?seller_id=seller_id') //El fetch es para llamar a la api.En este caso se deberia reemplazar site_id=MLA Y seller_id=179571326
+            .then(response => response.json())
+            .then(data => console.log(data));
+
+        </script>
+    </body>
+   </html>
